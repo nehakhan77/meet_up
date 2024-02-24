@@ -31,3 +31,8 @@ As a user, I should be able to display charts visualizing event details, so that
 
 Scenario: Given a user is viewing a list of events, when the user clicks on the charts option for a specific event, then the app should display charts given event related data.
 
+
+**Use of Serverless Functions in the Meet Up App**
+
+Serverless functions will play a vital role in the meet up app to provide OAuth2 tokens, authorize users to gain access to the Google Calendar API, manage user access , enable fast communication, and provide real-time data processing. Serverless functions offer benefits such as easy scability, cost efficiency, and being time-saving as well.
+
