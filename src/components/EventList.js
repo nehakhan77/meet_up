@@ -1,5 +1,6 @@
 import Event from "./Event";
 
+//extract the expected prop, events, from the component's props object
 const EventList = ({ events }) => {
   return (
     <ul id="event-list">
