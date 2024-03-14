@@ -1,5 +1,20 @@
 import { useState, useEffect } from "react";
 
+// props are extracted using objet destructuring
+/*
+const CitySearch = ({ allLocations, setCurrentCity }) => {
+
+  is the same as doing 
+
+const CitySearch = (props) => {
+const { allLocations, setCurrentCity } = props
+  
+  is the smae as doing 
+
+const CitySearch = (props) => {
+const allLocations = props.allLocations
+const setCurrentCity = props.setCurrentCity
+*/
 const CitySearch = ({ allLocations, setCurrentCity }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   //a new state for the input field so that you can access its value
