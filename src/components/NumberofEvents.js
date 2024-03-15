@@ -24,6 +24,7 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
     <div id="number-of-events">
       <label htmlFor="number-of-events-input">Number of Events: </label>
       <input
+        data-testid="number-of-events-input"
         type="text"
         className="number-of-events-input"
         defaultValue={32}
