@@ -10,8 +10,11 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
     if (isNaN(value)) {
       errorText = "Value is not a number";
       setErrorAlert(errorText);
-    } else if (value > 50) {
+    } else if (value <= 0) {
       errorText = "Minimum value is 1 event";
+      setErrorAlert(errorText);
+    } else if (value > 50) {
+      errorText = "You've exceeded maximum number of events";
       setErrorAlert(errorText);
     } else {
       errorText = "";
