@@ -38,19 +38,7 @@ export const getEvents = async () => {
       "https://5gy46tpb8d.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" +
       "/" +
       token;
-    const response = await fetch(url)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error("Something went wrong");
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    const response = await fetch(url);
     const result = await response.json();
     if (result) {
       return result.events;
