@@ -10,11 +10,11 @@ import "./App.css";
 const App = () => {
   const [allLocations, setAllLocations] = useState([]);
   const [currentNOE, setCurrentNOE] = useState(32);
-  const [errorAlert, setErrorAlert] = useState([]);
+  const [errorAlert, setErrorAlert] = useState("");
   const [events, setEvents] = useState([]);
   const [currentCity, setCurrentCity] = useState("See all cities");
-  const [infoAlert, setInfoAlert] = useState([]);
-  const [warningAlert, setWarningAlert] = useState([]);
+  const [infoAlert, setInfoAlert] = useState("");
+  const [warningAlert, setWarningAlert] = useState("");
 
   useEffect(() => {
     if (navigator.onLine) {
@@ -42,7 +42,7 @@ const App = () => {
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
-        {errorAlert.length ? <WarningAlert text={errorAlert} /> : null}
+        {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
         {}
       </div>
       <CitySearch
