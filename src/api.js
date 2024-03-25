@@ -30,6 +30,13 @@ export const getEvents = async () => {
   if (window.location.href.startsWith("http://localhost")) {
     return mockData;
   }
+
+  if (!navigator.onLine) {
+    const events = localStorage.getItem("lastEvents");
+    NProgress.done();
+    return events ? JSON.parse(events) : [];
+  }
+
   const token = await getAccessToken();
 
   if (token) {
@@ -53,7 +60,9 @@ export const getEvents = async () => {
     }
 
     if (result) {
+      NProgress.done();
       return result.events;
+      localStorage.setItem("lastEvents", JSON.stringify(result.events));
     } else {
       return null;
     }
