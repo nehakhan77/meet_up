@@ -38,11 +38,25 @@ export const getEvents = async () => {
       "https://5gy46tpb8d.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" +
       "/" +
       token;
-    const response = await fetch(url);
-    const result = await response.json();
+
+    let result; //this will hold the parsed JSON data
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        result = await response.json(); // Parse JSON only once
+      } else {
+        throw new Error("Something went wrong");
+      }
+    } catch (error) {
+      console.log(error);
+      return null; // Early return on error
+    }
+
     if (result) {
       return result.events;
-    } else return null;
+    } else {
+      return null;
+    }
   }
 };
 
