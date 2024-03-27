@@ -59,7 +59,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
       <input
         type="text"
         className="city"
-        placeholder="Search for a city"
+        placeholder="Choose your nearest city"
         value={query}
         onFocus={() => setShowSuggestions(true)}
         onChange={handleInputChanged}
