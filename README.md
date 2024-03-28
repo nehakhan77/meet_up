@@ -1,7 +1,8 @@
 ## Meet App
 
+The Meet App is a serverless and progressive web application where users can view upcoming events for a specific city. This app is built through React using a TDD approach, while using the Google Calendar API to fetch the events. Additionally, the app includes visual data for the events categorized by their event summary.
 
-## Project Features & Scenarios**
+## Project Features & Scenarios
 
 **Filter Events By City** 
 As a user, I should be able to filter events by city, so that I can see a list of events taking place in that city.
@@ -48,7 +49,7 @@ Serverless functions will play a vital role in the meet up app to provide OAuth2
 - **Puppeteer (End-to-End Testing)**
 - **Atatus (Performance Monitoring)**
 
-## Link to Deployed App** 
+## Link to Deployed App
 
 https://nehakhan77.github.io/meet_up/
 
