@@ -36,3 +36,12 @@ Scenario: Given a user is viewing a list of events, when the user clicks on the 
 
 Serverless functions will play a vital role in the meet up app to provide OAuth2 tokens, authorize users to gain access to the Google Calendar API, manage user access , enable fast communication, and provide real-time data processing. Serverless functions offer benefits such as easy scability, cost efficiency, and being time-saving as well.
 
+**Link to Deployed App** 
+
+https://nehakhan77.github.io/meet_up/
+
+**Meet APP UI***
+
+<img width="1439" alt="Screenshot 2024-03-27 at 9 05 53 PM" src="https://github.com/nehakhan77/meet_up/assets/136394004/f73bda3e-f556-467c-8c51-bdf3216427e4">
+
+
