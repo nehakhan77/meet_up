@@ -89,13 +89,13 @@ input[type="number"] {
 }
 
 .city {
-font-family: Didot,
+  font-family: Didot,
     serif;
 }
 
 .number-of-events-input {
   font-family: Didot,
-      serif;
+    serif;
 }
 
 .event {
@@ -130,7 +130,7 @@ font-family: Didot,
   grid-template-columns: 1fr 1fr;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 750px) {
   .charts-container {
     grid-template-columns: 1fr;
   }
