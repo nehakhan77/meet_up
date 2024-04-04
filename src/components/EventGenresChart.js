@@ -58,7 +58,7 @@ const EventGenresChart = ({ events }) => {
   };
 
   return (
-    <ResponsiveContainer width="99%" height={350}>
+    <ResponsiveContainer width="95%" height={400}>
       <PieChart>
         <Pie
           data={data}
@@ -66,7 +66,7 @@ const EventGenresChart = ({ events }) => {
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={130}
+          outerRadius={100}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
